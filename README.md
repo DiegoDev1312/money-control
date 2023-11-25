@@ -1,5 +1,5 @@
-# money-control
-Controlador de dinheiro
+# transactions-control
+Controlador suas transações
 
 Esse web-site tem como objetivo controlar às transações, listando entradas, saídas e mostrando o total desses valores.
 
