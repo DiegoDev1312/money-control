@@ -103,7 +103,7 @@ function searchTxt() {
     }
 }
 
-function formatCurrency() {
+function formatInputCurrency() {
     let value = inputPrice.value.replace(/[^\d]+/g, '');
 
     const wholePart = value.slice(0, -2);
@@ -206,7 +206,7 @@ function init(list) {
 
 init(initialValueList);
 
-inputPrice.addEventListener("input", formatCurrency);
+inputPrice.addEventListener('input', formatInputCurrency);
 searchButton.addEventListener('click', searchTxt);
 form.addEventListener('submit', handleFormChange);
 addButton.addEventListener('click', handleAddPress);

@@ -119,18 +119,21 @@ button img {
 }
 
 /* Table area */
-
 table {
     color: #FFF;
     border-spacing: 0px;
     width: 100%;
     border-radius: 6px;
     border-collapse: separate;
-    border-spacing: 0 16px;
+    margin: 12px 0px;
+}
+
+td, th {
+    background-color: rgb(73, 74, 75);
+    text-align: left;
 }
 
 tr {
-    background-color: rgb(73, 74, 75);
     transition: .3s all ease;
 }
 
@@ -142,10 +145,6 @@ th, td {
 
 tbody {
     overflow: scroll;
-}
-
-th {
-    text-align: left;
 }
 
 td img {
@@ -264,7 +263,7 @@ form input, form select {
 }
 
 @media (max-width: 500px) {
-    tbody {
+    tbody, thead {
         font-size: 0.7rem;
     }
 }
