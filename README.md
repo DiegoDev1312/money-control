@@ -9,7 +9,7 @@ Esse web-site tem como objetivo controlar às transações, listando entradas, s
     <li>Apagar transação</li>
     <li>Exportar arquivo em xlsx</li>
     <li>Pesquisar transação por nome</li>
-    <li>Páginação de 10 em 10</li>
+    <li>Paginação de 10 em 10</li>
     <li>Visualização dos cálculos de entrada, saída e valor total</li>
 </ul>
 
