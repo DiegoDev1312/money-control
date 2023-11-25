@@ -90,16 +90,16 @@ function handleDeletePress(tableRow) {
 }   
 
 function searchTxt() {
-    if (inputSearchValue.value) {
-        const valueList = JSON.parse(localStorage.getItem('@transaction-list')) || [];
+    const valueList = JSON.parse(localStorage.getItem('@transaction-list')) || [];
 
+    if (inputSearchValue.value) {
         const getSearchListByName = valueList.filter((transaction) => {
             return transaction.name.toUpperCase().indexOf(inputSearchValue.value.toUpperCase()) !== -1;
         });
         pageNumber = 1;
         init(getSearchListByName);
     } else {
-        init(initialValueList);
+        init(valueList);
     }
 }
 
