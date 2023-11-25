@@ -22,5 +22,5 @@ Este web-site tem como objetivo facilitar o controle de suas transações, propo
     <li>JavaScript</li>
 </ul>
 
-<strong>Deploy</strong>
-[https://diegodev1312.github.io/money-control/](https://diegodev1312.github.io/transactions-control/)https://diegodev1312.github.io/transactions-control/
+<strong>Deploy:</strong>
+https://diegodev1312.github.io/transactions-control/
