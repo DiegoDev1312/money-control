@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="container-align">
+            <div class="container-card">
+                <div class="input-box">
+                    <h2>Entrada</h2>
+                    <h1 data-price-input>R$ 0,00</h1>
+                </div>
+                <div class="output-box">
+                    <h2>Saída</h2>
+                    <h1 data-price-output>R$ 0,00</h1>
+                </div>
+                <div class="total-value">
+                    <h2>Valor total</h2>
+                    <h1 data-price-total>R$ 0,00</h1>
+                </div>
+            </div>
+            <div class="input-area">
+                <input data-input placeholder="Pesquisar..." />
+                <button data-search class="search-button">Buscar</button>
+                <button data-add-button class="add-button">+</button>
+                <button data-download-xls class="csv-download" title="Baixar em csv">
+                    <img src="./src/images/excel.svg" />
+                </button>
+            </div>
+            <table data-table>
+                <tbody>
+                </tbody>
+            </table>
+            <div data-page-area class="pagination-table-container">
+            </div>
+        </div>
+    </main>
+    <div class="add-modal-area">
+        <form>
+            <h1>Adicionar nova entrada/saída</h1>
+            <img data-close src="./src/images/close.svg" />
+            <input required placeholder="Nome" data-input-name />
+            <input required placeholder="Valor" data-input-price />
+            <select name="type" required>
+                <option value="input" selected>Entrada</option>
+                <option value="output">Saída</option>
+            </select>
+            <button class="add-new-operation">Adicionar</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+    <script src="src/scripts/script.js" defer></script>
+    <script src="src/scripts/download.js" defer></script>
+</body>
+</html>

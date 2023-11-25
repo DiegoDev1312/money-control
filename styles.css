@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* general configs */
+body {
+    background-color: #37393E;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px 8px;
+}
+
+.container-align {
+    max-width: 880px;
+}
+
+/* Card info and input search */
+.input-area {
+    width: 100%;
+    display: flex;
+    margin-top: 16px;
+    gap: 12px;
+}
+
+.input-area input {
+    height: 40px;
+    width:85%;
+    color: #FFF;
+    padding-left: 12px;
+    background-color: #4c4c4e;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+}
+
+input::placeholder {
+    color: #FFF;
+}
+
+.search-button {
+    height: 40px;
+    padding: 0px 12px;
+    border: 2px solid #1b831b;
+    color: #1b831b;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.input-box,
+.output-box,
+.total-value {
+    padding: 12px;
+    height: 100px;
+    width: 250px;
+    border-radius: 6px;
+    color: #FFF;
+    box-shadow: 0px 0px 3px #000;
+}
+
+.input-box h2,
+.output-box h2,
+.total-value h2 {
+    font-size: 1rem;
+}
+
+.input-box h1,
+.output-box h1,
+.total-value h1{
+    font-size: 1.5rem;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.input-box {
+    background-color: #1b831b;
+}
+
+.output-box {
+    background-color: #b41e1e;
+}
+
+.total-value {
+    background-color: rgb(49, 49, 211);
+}
+
+.container-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.add-button {
+    border: 1px solid #FFF;
+    color: #FFF;
+    height: 40px;
+    padding: 0px 12px;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* Table area */
+
+table {
+    color: #FFF;
+    border-spacing: 0px;
+    width: 100%;
+    border-radius: 6px;
+    border-collapse: separate;
+    border-spacing: 0 16px;
+}
+
+tr {
+    background-color: rgb(73, 74, 75);
+    transition: .3s all ease;
+}
+
+th, td {
+    height: 50px;
+    padding-left: 12px;
+    text-align: left;
+}
+
+tbody {
+    overflow: scroll;
+}
+
+th {
+    text-align: left;
+}
+
+td img {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.csv-download {
+    background-color: transparent;
+    border: none;
+}
+
+.input {
+    color: #45b345;
+}
+
+.output {
+    color: #f63535
+}
+
+.pagination-table {
+    height: 30px;
+    width: 30px;
+    background-color: #4c4c4e;
+    color: #FFF;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.selected-pagination,
+.pagination-table:hover {
+    height: 40px;
+    width: 40px;
+}
+
+.selected-pagination {
+    pointer-events: none;
+}
+
+.pagination-table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* Add modal area */
+.add-modal-area {
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: .5s ease;
+}
+
+form {
+    height: 300px;
+    width: 600px;
+    background-color: #37393E;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 12px;
+    gap: 12px;
+    align-items: center;
+}
+
+form h1 {
+    color: #FFF;
+    font-size: 1.4rem;
+    padding: 12px 0px;
+}
+
+form img {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    cursor: pointer;
+}
+
+form input, form select {
+    height: 40px;
+    width: 100%;
+    padding-left: 12px;
+    background-color: #4c4c4e;
+    color: #FFF;
+    border: none;
+    outline: none;
+}
+
+.add-new-operation {
+    height: 40px;
+    width: 150px;
+    border-radius: 6px;
+    background-color: #4c4c4e;
+    color: #FFF;
+    border: none;
+    border: 1px solid #FFF;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+    tbody {
+        font-size: 0.7rem;
+    }
+}
