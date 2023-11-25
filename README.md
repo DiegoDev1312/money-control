@@ -5,6 +5,8 @@ Este web-site tem como objetivo facilitar o controle de suas transações, propo
 
 <strong>Vídeo demonstrativo</strong>
 
+https://github.com/DiegoDev1312/transactions-control/assets/149342165/d294f62d-1464-4d23-8b05-784e07ec6da3
+
 <strong>Funcionalidades</strong>
 <ul>
     <li>Criar transação: Adicione novas transações facilmente.</li>
